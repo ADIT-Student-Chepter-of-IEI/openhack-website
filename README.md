@@ -26,6 +26,7 @@
     <li>add working social media links</li>
     <li>add problem statements, prizes, sponsors, judges and FAQ.</li>
     <li>populate teams with some real data.</li>
+    <li>Update favicon icon and document title</li>
     <li>drink some water</li>
 </ul>
 
