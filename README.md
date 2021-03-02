@@ -1,70 +1,45 @@
-# Getting Started with Create React App
+<p align="center">
+    <img src="https://drive.google.com/uc?id=1YRVlOBDGISqbSzAgHk0WqihcIbsaF5G7" width="30%">
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<h2>Introduction:</h2>
+<p>Website for openhack hackathon. (yet prototype) </p>
+<p>P.S: If the logo isn't displaying correctly -- who uses light theme yaar? go change your theme first.</p>
 
-## Available Scripts
+<h2>Installation</h2>
+    <p>run <code>npm install</code> from root.</p>
+    <p>latest version of React can cause some issues with <code>react-scroll</code> (at least, it did for me). if you face any issues, <a href="https://docs.npmjs.com/cli/v7/commands/npm-cache">clean npm cache.</a> and make sure that installed react version is <code>16.10</code>. if it still doesn't solve your problem, you know <a href="https://stackoverflow.com/">Stack Overflow</a> is the way to go; or feel free create an issue here.</p>
 
-In the project directory, you can run:
+<h2>Build and Deployment</h2>
+    <p> <code>npm run build</code> <code>Serve -s build</code> </p>
+    <p> you'll need serve to be globally installed. </p>
 
-### `npm start`
+<h2>Overview and Project Structure:</h2>    
+    <p>Ignoring all the typical boilerplate stuff, the <code>src</code> is the main folder. which includes <code>components</code>, <code>images</code> and <code>pages</code> directory. pages contain index.js, which exports the one and only home page of the site.images contain SVGs used in page, being the logo and the one used in about section of the page.</p>
+    <p>components contains a folder per every section of the website, being <code>HeroSection</code>, <code>About</code>, <code>Schedule</code>, <code>Problem Statements</code> etc. numbered so we don't have to find them every time trying to change them. (alphabetical sort can be pain in the * sometimes) and separate folders for navigation bar, side bar, logo, card and cardlist components. CardList and Card components are used to display the cards of team and judges section. These all components are imported in pages/index.js file.</p>
+    <p><code>ButtonElements.js</code> and <code>Commons.js</code> files include css for button and common css elements such as Container and Wrapper. The actual component inside every folder lies within index.js file. there could be an extra file with <code>componentElements.js</code>, it doesn't bite. It contains css specifically used for that component only. Schedule component contains the Timeline.js file, which exports the timeline used in schedule section of the webpage. don't you ever get tired of reading? shoo have some life.</p>
+    
+<h2>Todo:</h2>
+<ul>
+    <li>add social media icons for profile card</li>
+    <li>add appropriate data inplace of lorem ipsum.</li>
+    <li>add working social media links</li>
+    <li>add problem statements, prizes, sponsors, judges and FAQ.</li>
+    <li>populate teams with some real data.</li>
+    <li>drink some water</li>
+</ul>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<h3>    
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<h4>Suggestions? Want to contribute? Pull requests are always open.</h4>
+<ul>
+<li>Fork it</li>
+<li>Clone it to your local system</li>
+<li>Make a new branch</li>
+<li>Make your changes</li>
+<li>Push it back to your repo</li>
+<li>Click the Compare & pull request button</li>
+<li>Click Create pull request to open a new pull request</li>
+</ul>
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Have a nice day :)

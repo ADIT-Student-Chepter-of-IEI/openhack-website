@@ -1,6 +1,5 @@
 import React from 'react'
-import {SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink, 
-SideBtnWrap, SidebarRoute} from './SidebarElements';
+import {SidebarContainer, Icon, CloseIcon, SidebarWrapper, SidebarMenu, SidebarLink } from './SidebarElements';
 
 const Sidebar = ({isOpen, toggle}) => {
     return (
@@ -12,14 +11,15 @@ const Sidebar = ({isOpen, toggle}) => {
             <SidebarWrapper>
                 <SidebarMenu>
                     <SidebarLink to="about" onClick={toggle}>About</SidebarLink>
-                    <SidebarLink to="discover" onClick={toggle}>Discover</SidebarLink>
-                    <SidebarLink to="services" onClick={toggle}>Services</SidebarLink>
-                    <SidebarLink to="signup" onClick={toggle}>Sign Up</SidebarLink>
+                    <SidebarLink to="schedule" onClick={toggle}>Schedule</SidebarLink>
+                    <SidebarLink to="problem-statements" onClick={toggle}>Problem Statements</SidebarLink>
+                    <SidebarLink to="prizes" onClick={toggle}>Prizes</SidebarLink>
+                    <SidebarLink to="sponsors" onClick={toggle}>Sponsors</SidebarLink>
+                    <SidebarLink to="judges" onClick={toggle}>Judges</SidebarLink>
+                    <SidebarLink to="FAQs" onClick={toggle}>FAQs</SidebarLink>
+                    <SidebarLink to="team" onClick={toggle}>Team</SidebarLink>
                 </SidebarMenu>
-
-                <SideBtnWrap>
-                    <SidebarRoute to="/signin">Sign In</SidebarRoute>
-                </SideBtnWrap>
+            
             </SidebarWrapper>
         </SidebarContainer>
     )

@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { FaBars } from 'react-icons/fa';
 import {
     Nav, NavbarContainer, NavLogo, MobileIcon,
-    NavMenu, NavItem, NavLinks, NavBtn, NavBtnLink
+    NavMenu, NavItem, NavLinks
 } from "./NavbarElements"
+import Logo from "../Logo"
 import { animateScroll as scroll } from "react-scroll";
 
 const Navbar = ({ toggle }) => {
@@ -30,7 +31,9 @@ const Navbar = ({ toggle }) => {
         <>
             <Nav scrollNav={scrollNav}>
                 <NavbarContainer>
-                    <NavLogo to="/" onClick={toggleHome}>OpenHack</NavLogo>
+                    <NavLogo to="/" onClick={toggleHome}>
+                        <Logo />
+                    </NavLogo>
                     <MobileIcon onClick={toggle}>
                         <FaBars />
                     </MobileIcon>
@@ -46,39 +49,76 @@ const Navbar = ({ toggle }) => {
                             > About </NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="discover"
+                            <NavLinks to="schedule"
                                 smooth="true"
                                 duration={500}
                                 spy={true}
                                 exact="true"
                                 offset={-80}
                                 activeClass="active"
-                            >Discover</NavLinks>
+                            >Schedule</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="services"
+                            <NavLinks to="problem-statements"
                                 smooth="true"
                                 duration={500}
                                 spy={true}
                                 exact="true"
                                 offset={-80}
                                 activeClass="active"
-                            >Services</NavLinks>
+                            >Problem Statements</NavLinks>
                         </NavItem>
                         <NavItem>
-                            <NavLinks to="signup"
+                            <NavLinks to="prizes"
                                 smooth="true"
                                 duration={500}
                                 spy={true}
                                 exact="true"
                                 offset={-80}
                                 activeClass="active"
-                            >Sign Up</NavLinks>
+                            >Prizes</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to="sponsors"
+                                smooth="true"
+                                duration={500}
+                                spy={true}
+                                exact="true"
+                                offset={-80}
+                                activeClass="active"
+                            >Sponsors</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to="judges"
+                                smooth="true"
+                                duration={500}
+                                spy={true}
+                                exact="true"
+                                offset={-80}
+                                activeClass="active"
+                            >Judges</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to="faqs"
+                                smooth="true"
+                                duration={500}
+                                spy={true}
+                                exact="true"
+                                offset={-80}
+                                activeClass="active"
+                            >FAQs</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to="team"
+                                smooth="true"
+                                duration={500}
+                                spy={true}
+                                exact="true"
+                                offset={-80}
+                                activeClass="active"
+                            >Team</NavLinks>
                         </NavItem>
                     </NavMenu>
-                    <NavBtn>
-                        <NavBtnLink to="/signin">Sign In</NavBtnLink>
-                    </NavBtn>
                 </NavbarContainer>
             </Nav>
         </>
